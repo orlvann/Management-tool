@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+/* Ensure the body takes full height to prevent layout issues */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure other elements don't interfere with the sidebar and IconButton */
+body {
+  display: flex;
+  flex-direction: column;
+}
