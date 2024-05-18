@@ -7,9 +7,9 @@ import Greeting from '../components/Greeting';
 import TaskReminders from '../components/TaskReminders';
 import PriorityTasks from '../components/PriorityTasks';
 import AssignedDocuments from '../components/AssignedDocuments';
-import Calendar from '../components/Calendar';
 import CollaborationTool from '../components/CollaborationTool';
 import Header from '../components/Header';
+import CalendarComponent from '../components/Calendar';
 
 const HomePage = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -45,7 +45,7 @@ const HomePage = () => {
               <TaskReminders reminders={reminders} />
               <PriorityTasks tasks={priorityTasks} />
               <AssignedDocuments documents={documents} />
-              <Calendar />
+              <CalendarComponent />
               <CollaborationTool />
             </SimpleGrid>
           </Container>
