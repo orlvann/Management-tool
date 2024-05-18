@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  position: absolute;
+  width: 250px;
+  height: 38px;
+  left: 90%;
+  transform: translateX(-50%);
+}
